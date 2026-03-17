@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ECE5DD">
+
+    <!-- 🔥 TOP BAR -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:gravity="center_vertical"
+        android:padding="12dp"
+        android:orientation="vertical"
+        android:background="#66000000">
+
+        <TextView
+            android:text="Chat"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/statusText"
+            android:text="Online"
+            android:textColor="#DDFFFFFF"
+            android:textSize="13sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <!-- 💬 CHAT LIST -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/chatRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="8dp"
+        android:clipToPadding="false"/>
+
+    <!-- 😍 MESSAGE BOX -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:padding="8dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:elevation="8dp">
+
+        <!-- Emoji Button (FIXED ICON) -->
+        <ImageButton
+            android:id="@+id/emojiBtn"
+            android:src="@android:drawable/ic_menu_gallery"
+            android:background="@android:color/transparent"
+            android:layout_width="40dp"
+            android:layout_height="40dp"/>
+
+        <!-- Message Box (ONLY ONE) -->
+        <EditText
+            android:id="@+id/messageBox"
+            android:hint="Type a message..."
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:inputType="textMultiLine"
+            android:layout_weight="1"
+            android:padding="8dp"
+            android:background="@android:color/transparent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+
+        <!-- Send Button -->
+        <ImageButton
+            android:id="@+id/sendBtn"
+            android:src="@android:drawable/ic_menu_send"
+            android:background="@android:color/transparent"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:scaleX="1.2"
+            android:scaleY="1.2"/>
+    </LinearLayout>
+
+</LinearLayout>
