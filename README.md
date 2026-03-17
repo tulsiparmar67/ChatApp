@@ -17,10 +17,10 @@
 ## 📸 Screenshots
 
 <p align="center">
-  <img src="screenshots/chat1.png" width="180"/>
-  <img src="screenshots/chat2.png" width="180"/>
   <img src="screenshots/chat3.png" width="180"/>
   <img src="screenshots/chat4.png" width="180"/>
+  <img src="screenshots/chat1.png" width="180"/>
+  <img src="screenshots/chat2.png" width="180"/>
 </p>
 
 ---
